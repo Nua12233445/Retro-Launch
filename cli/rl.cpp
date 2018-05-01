@@ -1,6 +1,14 @@
 //Copyright Asaad Noman Abbasi
 
+/*
+
+   To use this , i assume u have ur emu's added to ur PATH ..
+   i have tested this on CITRA(3DS) , CEMU(WII U) , DOLPHIN(WII)
+
+*/
+
 #include <iostream>
+#include <unistd.h>
 #include <fstream>
 #include <string>
 
@@ -26,6 +34,7 @@ int main() {
          if(lc == 0) { //if first item
             lc_e++;
             GAME_TITLES[lc] = line;
+            std::cout << "(" << lc << ")"<< " " << GAME_TITLES[lc] << std::endl;
             lc++;
          } else if(lc != 0) { //if not first item
             if(lc % 2 != 0) { //if AN odd item [GAME PATH]
@@ -46,15 +55,21 @@ int main() {
                lc_e++;
                lc = (lc + 1) - lc_e;
                GAME_TITLES[lc] = line;
+               std::cout << "(" << lc << ")" << " " << GAME_TITLES[lc] << std::endl;
                lc += lc_e;
             }
          }
-         
       } file.close();
    } else {
       std::cout << "Could not Open File";
    }
    
-   std::cout << GAME_TITLES[3];
-   std::cout << "\n" << GAME_COMMAND[3];
+   std::cout << "\n Please Enter Game Code: ";
+   std::cin >> CHOICE;
+   std::cout << " ------------------------------------------- \n";
+   std::cout << " Starting " << GAME_TITLES[CHOICE] << std::endl;
+   std::cout << " ------------------------------------------- \n";
+   usleep(5000000);
+   system(GAME_COMMAND[CHOICE].c_str());
+   return 0;
 }

@@ -1,0 +1,12 @@
+Pokemon Moon (3DS)
+citra-qt "C:\T H E      S T A S H\Games\Games\3DS\Pokemon Moon.3ds"
+Pokemon Ultra Moon (3DS)
+citra-qt "C:\T H E      S T A S H\Games\Games\3DS\Pokemon Ultra Moon.3ds"
+Pokemon Omega Ruby (3DS)
+citra-qt "C:\T H E      S T A S H\Games\Games\3DS\Pokemon Omega Ruby.3ds"
+Super Mario 3D Land (3DS)
+citra-qt "C:\T H E      S T A S H\Games\Games\3DS\Super Mario 3D Land.3ds"
+New Super Mario (WII U)
+cemu -g "C:\T H E      S T A S H\Games\Games\Wii U\New Super Mario Bros U\red-pro2.rpx"
+Mario Kart (Wii)
+dolphin -e "C:\T H E      S T A S H\Games\Games\Wii\Mario Kart.iso"
