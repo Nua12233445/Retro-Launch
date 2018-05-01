@@ -1,5 +1,10 @@
 Pokemon Moon (3DS)
+path 1
 Pokemon Ultra Moon (3DS)
+path 2
 Pokemon Omega Ruby (3DS)
+path 3
 Mario 3D Land (3DS)
+path 4
 New Super Mario (WII U)
+path 5
